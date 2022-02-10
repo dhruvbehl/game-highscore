@@ -4,6 +4,7 @@ go 1.15
 
 require (
 	github.com/dhruvbehl/game-apis v0.0.0-20220209231545-d47bcbafe802
+	github.com/pkg/errors v0.9.1
 	github.com/rs/zerolog v1.26.1
 	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
 	golang.org/x/sys v0.0.0-20220209214540-3681064d5158 // indirect
