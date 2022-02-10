@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	grpcBackend "github.com/dhruvbehl/game-highscore/internal/server/grpc"
+	grpcbackend "github.com/dhruvbehl/game-highscore/internal/server/grpc"
 	"github.com/rs/zerolog/log"
 )
 
@@ -16,7 +16,7 @@ Summary:
 func main() {
 	address := flag.String("address", ":9001", "address to connect to game-highscore service")
 	flag.Parse()
-	server := grpcBackend.NewServer(*address)
+	server := grpcbackend.NewServer(*address)
 	err := server.ListenAndServe()
 	if err != nil {
 		log.Fatal().Err(err).Msg("Failed to initialize gRPC server for service game-highscore ")
